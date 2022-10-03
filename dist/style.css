@@ -1,0 +1,83 @@
+:root{
+  --cinza-claro:#DADCE0;
+  --cinza-escuro:#ACACAC;
+  --branco:#ffffff;
+  --azul:#4285F4;
+  --preto:#000000;
+
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.calculadora_titulo{
+  text-align: center;
+  margin-bottom: 3rem;
+
+}
+
+.calculadora_content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 25rem;
+  height: 25rem;
+  margin: 0 auto;
+
+}
+
+.input{
+  width: 25rem;
+  height: 5rem;
+  border-radius: 5px;
+  border: 1px solid var(--cinza-claro);
+  text-align: right;
+  direction: RTL;
+  font-size: 2rem;
+}
+
+.teclado{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-between;
+ margin-top: 3%;
+}
+
+.botao{
+  width:5.5rem ;
+  height: 3.2rem;
+  border-radius: 5px;
+  border: transparent;
+  margin-top: 2%;
+  background-color: var(--cinza-claro);
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.botao_simbolo{
+  width:5.5rem ;
+  height: 3.2rem;
+  border-radius: 5px;
+  border: transparent;
+  margin-top: 2%;
+  background-color: var(--cinza-escuro);
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.botao_simbolo_igual{
+  width:5.5rem ;
+  height: 3.2rem;
+  border-radius: 5px;
+  border: transparent;
+  margin-top: 2%;
+  background-color: var(--azul);
+  font-size: 1.5rem;
+  text-align: center;
+}
