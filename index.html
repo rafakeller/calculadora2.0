@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/style.css">
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <main class="projeto">
+    <section class="calculadora">
+      <h1 class="calculadora_titulo">CALCULADORA</h1>
+      <div class="calculadora_content" data-calculadora="calculadora">
+        <div class="input_content" >
+          <input  class="input" type="text" value=""  data-input>
+        </div>
+        <div class="teclado" data-teclado="teclado">
+          <button class="botao_simbolo" data-simbolo>
+            (
+          </button>
+          <button class="botao_simbolo" data-simbolo>
+            )
+          </button>
+          <button class="botao_simbolo porcent" data-simbolo>
+            %
+          </button>
+          <button class="botao_simbolo" data-limpa>
+            AC
+          </button>
+          <button class="botao" data-botao>
+            9
+          </button>
+          <button class="botao" data-botao>
+            8
+          </button>
+          <button class="botao" data-botao>
+            7
+          </button>
+          <button class="botao_simbolo divi" data-simbolo>
+          /
+          </button>
+          <button class="botao" data-botao>
+            6
+          </button>
+          <button class="botao" data-botao>
+            5
+          </button>
+          <button class="botao" data-botao>
+            4
+          </button>
+          <button class="botao_simbolo multi" data-simbolo>
+            x
+          </button>
+          <button class="botao" data-botao>
+            3
+          </button>
+          <button class="botao" data-botao>
+            2
+          </button>
+          <button class="botao" data-botao>
+            1
+          </button>
+          <button class="botao_simbolo sub" data-simbolo>
+            -
+          </button>
+          <button class="botao" data-botao>
+            0
+          </button>
+          <button class="botao_simbolo" data-botao>
+            .
+          </button>
+          <button class="botao_simbolo_igual" data-resultado>
+            =
+          </button>
+          <button class="botao_simbolo soma" data-simbolo >
+            +
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./main.js" ></script>
+</body>
+
+</html>
