@@ -1,6 +1,10 @@
 "use strict";
 import { digitandoNumeros } from "./functions/digitandoNumeros.js";
 import { digitandoOperadores } from "./functions/digitandoOperadores.js";
+import {
+  arrayPorcent,
+  digitandoPorcent,
+} from "./functions/digitandoPorcent.js";
 import { limpaArray } from "./functions/limpaArray.js";
 import { zeraInput } from "./functions/zeraInput.js";
 
@@ -11,22 +15,37 @@ export const numeros = new Array();
 input.focus();
 
 digitandoNumeros(input);
-
+digitandoPorcent();
 digitandoOperadores(input, numeros);
-
 
 export const mostrarResultado = (operador, numeros) => {
   input.value = "";
 
-  if (operador.classList[1] === "soma") input.value = numeros[0] + numeros[1];
+  switch (operador.classList[1]) {
+    case "soma":
+      input.value = numeros[0] + numeros[1];
+      break;
 
-  if (operador.classList[1] === "sub") input.value = numeros[0] - numeros[1];
+    case "sub":
+      input.value = numeros[0] - numeros[1];
+      break;
+    case "multi":
+      if (arrayPorcent == "%") {
+        input.value = numeros[0] * (numeros[1] / 100);
+      } else {
+        input.value = numeros[0] * numeros[1];
+      }
 
-  if (operador.classList[1] == "multi") input.value = numeros[0] * numeros[1];
+      break;
 
-  if (operador.classList[1] === "divi") input.value = numeros[0] / numeros[1];
+    case "divi":
+      input.value = numeros[0] / numeros[1];
+      break;
 
-  
+    default:
+      alert("digite uma operação");
+  }
+
   if (numeros.length >= 2) {
     limpaArray();
   }

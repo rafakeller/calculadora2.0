@@ -8,6 +8,7 @@ export const resultado = (operador, numeros) => {
 
   sinalIgual.onclick = () => {
     numeros.push(parseFloat(input.value));
+    console.log(numeros)
     mostrarResultado(operador, numeros);
   };
 };
